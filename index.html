@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tech plus</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <style>
+
+
+        section {
+            text-align: center;
+            padding-top: 70px;
+            background-color: #fff;
+
+        }
+
+        #navbar .active{
+            border-bottom: 5px solid #000000;
+        }
+
+        .nav a,
+        .nav a:hover {
+            color: #000000;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 1000;
+        }
+
+        #textarea-form {
+            max-height: 200px;
+            resize: none;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        .card-body button {
+            
+            justify-content: end;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link  {
+            background-color: #000000;
+        }
+
+        .btn-primary {
+            background-color: #000000;
+            border-color: #000000;
+        }
+
+        a {
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar"  >
+            <div class="container">
+                <h1 >TECH+</h1>
+                <nav class="navbar" id="navbar">
+                    <ul class="nav" >
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header >
+    <div id="Carrossel"  class="carousel  carousel-fade slide" data-bs-ride="carousel" data-bs-spy="scroll" data-bs-target="#navbar">
+        <div class="carousel-inner" id="Home" >
+            <div   class="carousel-item active">
+                <img class=" d-block " style=" width: 100%; height: auto;" src="https://d30wkz0ptv5pwh.cloudfront.net/media/catalog/category/samsung-banner.jpg" >
+            </div>
+            <div  class="carousel-item">
+                <img class="d-block " style="width:100%; height: auto;" src="/images/acer-nitro-5.jpg" >
+            </div>
+            <div  class="carousel-item">
+                <img class="d-block " style="width:100%; height: auto;" src="/images/hyperx-brand-banner.jpg" >
+            </div>
+        </div>
+        <button type="button" class="carousel-control-prev" data-bs-target="#Carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span  class="visually-hidden"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#Carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span  class="visually-hidden"></span>
+        </button>
+    </div>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#navbar">
+        <section id="Produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav >
+                    <ul id="navBarList" class="nav nav-tabs nav-pills nav-fill justify-content-center ">
+                        <li class="nav-item">
+                            <a href="#"  data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" >Celular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" >Computador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" >Acessorios</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row">
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/Galaxy S23.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                            <h4 class="card-title">S23 Ultra / 254gb</h4>
+                                            <p class="card-text">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                            </p>    
+                                                <button  type="button" class="btn btn-primary">Comprar</button>
+                                                <a  href="#">Saiba mais</a>        
+                                    </div>
+                                </article>
+                            </div>                            
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2"src="/images/Galaxy A55.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Galaxy A55 / 256gb</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>  
+                                </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/Galaxt foldZ.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Galaxy Z Fold5 5G / 512gb</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="row">
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/GalaxyBook.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Galaxy Book2 Intel® Core™ i3-1215U</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>    
+                                    </div>
+                                </article>
+                            </div>                            
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/AcerNotebook.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Notebook Gamer Acer Nitro 5</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>    
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/Asus-Vivobook.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Notebook ASUS Vivobook 15, AMD Ryzen 5</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>    
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <div class="row">
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/Headset-733.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Headset Gamer Sem Fio Logitech G733</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>    
+                                    </div>
+                                </article>
+                            </div>                            
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/Mouse-Red-Dragon.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Mouse Gamer Redragon Cobra</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>    
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-auto col-md-6 col-lg-4">
+                                <article class="card mt-2">
+                                    <img class="p-2" src="/images/Teclado-Logitech-mx.jpg">
+                                    <div class="card-body botao-card d-block lista-produtos">
+                                        <h4 class="card-title">Teclado Sem Fio Logitech MX Keys Mini</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dignissimos doloremque doloribus asperiores. Explicabo cupiditate deleniti quae et, architecto ipsam! Officiis soluta eaque id! Velit sit iste facilis nesciunt numquam?
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <a  href="#">Saiba mais</a>    
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <div class="row" id="contato">
+            <div class="col">
+                <h2  class="pt-4">Contato</h2>
+                <form>
+                    <label class="form-label" for="email">Seu email:</label>
+                    <input class="form-control" id="email" type="email" required/>
+                    <label class="form-label" for="tel">Seu telefone:</label>
+                    <input class="form-control" id="tel" type="text" name="tel" required/>
+                    <label class="form-label" for="prod">Produto:</label>
+                    <input class="form-control" id="prod" type="text" name="prod"/>
+                    <label for="textarea-form">Deixe a sua mensagem:</label>
+                    <textarea class="form-control" id="textarea-form" rows="3"></textarea>
+                    <button type="submit" class= "btn btn-primary btn-block w-100 mt-3">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container d-flex text-align-center justify-content-between mt-4 pt-3">
+            <p>Desenvolvido por Enzo Yuta</p>
+            <h1>TECH+</h1>
+        </div>
+</footer>
+
+    <script  src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/lib/jquery.mask.min.js"></script>
+    <script>
+        $("#tel").mask("(00) 00000-0000");
+
+        $(document).ready(function(){
+            $(".lista-produtos button").click(function(){
+            const destino = $("#contato");
+
+            const nomeProduto = $(this).parent().find('h4').text();
+
+            $("#prod").val(nomeProduto)
+
+            $("html").animate({
+                scrollTop: destino.offset().top
+            }, 1000)
+        })
+
+        })
+    </script>
+</body>
+</html>
